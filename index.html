@@ -1,14 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>wheahter</title>
+    <script src="https://kit.fontawesome.com/c10eb74901.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300&display=swap" rel="stylesheet">
+    <link href="src/style.css" rel="stylesheet" type="text/css">
+    <link href="src/index.js" rel="stylesheet" type="script">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 </head>
+
 <body>
-    <h1>
-        Hey Tati
-    </h1>
+    <div class="container">
+        <nav class="navbar" id="search-form">
+            <div class="topnav-centered navbar-nav mx-auto">
+                <a class="navbar-brand"></a>
+                <form id="search-form" class="d-flex">
+                    <input class="form-control me-2" id="city-input" type="search" placeholder="city..."
+                        aria-label="Search">
+                    <button type="submit" class="btn btn-primary me-2">Search</button>
+                    <button type="button" class="btn btn-primary" id="current-location-button">Current</button>
+                </form>
+
+                <h1 id="city">
+                    <i class="fas fa-map-pin"></i> Faro, Portugal
+                </h1>
+                <br />
+                <h1>
+                    <h1>
+                        <span id="temperature">18</span>º
+                        <a href="#" id="celsius-link">°C</a> |
+                        <a href="#" id="fahrenheit-link">°F</a>
+                        <br />
+                        <small><span id="description">clouds</span></small>
+                    </h1>
+
+
+                    </strong>
+                </h1>
+                <br />
+                <h2 id="date">
+                    date and time
+                </h2>
+                <p>
+                    <i class="fas fa-sun"></i>
+                </p>
+                <p>
+                    <small id="humidity">
+                        humidity: 10%
+                    </small>
+                    <br />
+                    <small id="wind">
+                        wind: 13km/h
+                    </small>
+
+
+                </p>
+                <div class="row">
+                    <div class="col-sm">
+                        Sun
+                        <br />
+                        18°C
+                        <br />
+                        <i class="fas fa-sun"></i>
+                    </div>
+                    <div class="col-sm">
+                        Mon
+                        <br />
+                        18°C
+                        <br />
+                        <i class="fas fa-sun"></i>
+                    </div>
+                    <div class="col-sm">
+                        Tues
+                        <br />
+                        18°C
+                        <br />
+                        <i class="fas fa-sun"></i>
+                    </div>
+                    <div class="col-sm">
+                        Wed
+                        <br />
+                        19°C
+                        <br />
+                        <i class="fas fa-cloud-sun"></i>
+                    </div>
+                    <div class="col-sm">
+                        Thur
+                        <br />
+                        19°C
+                        <br />
+                        <i class="fas fa-cloud-sun"></i>
+                    </div>
+                    <div class="col-sm">
+                        Frid
+                        <br />
+                        21°C
+                        <br />
+                        <i class="fas fa-cloud-sun"></i>
+                    </div>
+                    <footer>
+                        <br />
+                        Lisboa, Porto London, New York, Moscow
+                    </footer>
+                </div>
+                <script src="src/index.js"></script>
 </body>
+
 </html>
